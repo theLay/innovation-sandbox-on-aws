@@ -19,8 +19,8 @@ export const authHandlers = [
       authenticated: true,
       session: {
         user: {
-          email: "test@example.com",
-          roles: ["User"],
+          email: "admin@example.com",
+          roles: ["Admin"],
         },
         exp: Math.floor(Date.now() / 1000) + 3600, // 1 hour from now
         iat: Math.floor(Date.now() / 1000),

@@ -7,6 +7,7 @@ import { mockConfigurationApi } from "@amzn/innovation-sandbox-frontend/mocks/mo
 
 export const mockConfiguration: GlobalConfigForUI = createConfiguration({
   isbManagedRegions: ["us-east-1", "us-west-2"],
+  maintenanceMode: false,
 });
 mockConfigurationApi.returns(mockConfiguration);
 
