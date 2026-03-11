@@ -86,6 +86,11 @@ export const BaseLayout = ({ children }: AppLayoutProps) => {
         text: "Accounts",
         type: "link",
       });
+      navigationItems.push({
+        href: "/cost",
+        text: "Cost Dashboard",
+        type: "link",
+      });
     }
 
     // Settings (Manager and Admin)
