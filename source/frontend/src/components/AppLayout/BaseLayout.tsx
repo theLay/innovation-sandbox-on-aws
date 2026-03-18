@@ -91,6 +91,11 @@ export const BaseLayout = ({ children }: AppLayoutProps) => {
         text: "Cost Dashboard",
         type: "link",
       });
+      navigationItems.push({
+        href: "/cost/trends",
+        text: "Cost Trends",
+        type: "link",
+      });
     }
 
     // Settings (Manager and Admin)

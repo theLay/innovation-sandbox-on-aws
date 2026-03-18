@@ -35,6 +35,7 @@ import { EditDurationSettings } from "@amzn/innovation-sandbox-frontend/domains/
 import { LeaseTemplateDetails } from "@amzn/innovation-sandbox-frontend/domains/leaseTemplates/pages/LeaseTemplateDetails";
 import { ListLeaseTemplates } from "@amzn/innovation-sandbox-frontend/domains/leaseTemplates/pages/ListLeaseTemplates";
 import { CostDashboard } from "@amzn/innovation-sandbox-frontend/domains/cost/pages/CostDashboard";
+import { CostTrendDashboard } from "@amzn/innovation-sandbox-frontend/domains/cost/pages/CostTrendDashboard";
 import { Settings } from "@amzn/innovation-sandbox-frontend/domains/settings/pages/Settings";
 import { ModalProvider } from "@amzn/innovation-sandbox-frontend/hooks/useModal";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -64,6 +65,7 @@ export const App = () => {
     },
     { path: "/accounts", Element: ListAccounts },
     { path: "/cost", Element: CostDashboard },
+    { path: "/cost/trends", Element: CostTrendDashboard },
     { path: "/accounts/new", Element: AddAccounts },
     { path: "/approvals", Element: ListApprovals },
     { path: "/approvals/:leaseId", Element: ApprovalDetails },
